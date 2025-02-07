@@ -1,0 +1,106 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background: black;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Open Sans", helvetica-light, Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  height: 60px;
+  margin: auto;
+  padding: 10px;
+  color: white;
+}
+
+.header_absolute {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.logo-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 700;
+}
+
+.logo {
+  width: 60px;
+}
+
+.chat-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat {
+  width: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.preview-box {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.preview-box__image {
+  width: 100%;
+  height: 100dvh;
+  object-fit: cover;
+  animation: scale-image infinite 20s;
+}
+
+/*-------------------------------------maim-swiper----------------------------------*/
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: white;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+@keyframes scale-image {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
