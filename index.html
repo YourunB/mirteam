@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles/normalize.css" rel="stylesheet">
   <link href="styles/styles.css" rel="stylesheet">
+  <link href="styles/media.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="icon" href="assets/images/logo.png">
   <title>МирТем</title>
 </head>
@@ -37,10 +40,39 @@
       <img src="assets/svg/chat.svg" alt="Чат" class="chat">
     </div>
   </header>
+
   <main>
-    <div class="preview-box">
-      <img src="assets/images/ceilings/ceiling-1.jpeg" alt="Интерьер" class="preview-box__image">
+    <div class="swiper main-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="preview-box">
+            <img src="assets/images/ceilings/ceiling-1.jpeg" alt="Интерьер" class="preview-box__image">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="preview-box">
+            <img src="assets/images/ceilings/ceiling-2.jpeg" alt="Интерьер" class="preview-box__image">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="preview-box">
+            <img src="assets/images/ceilings/ceiling-3.jpeg" alt="Интерьер" class="preview-box__image">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="preview-box">
+            <img src="assets/images/ceilings/ceiling-4.jpeg" alt="Интерьер" class="preview-box__image">
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
+
   </main>
+
+  <script src="scripts/swiper/main-swiper.js"></script>
 </body>
 </html>
