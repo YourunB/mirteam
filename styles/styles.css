@@ -45,7 +45,7 @@ body {
 }
 
 .header_absolute {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   z-index: 10;
@@ -141,6 +141,10 @@ body {
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: white;
+}
+
+.scroll-off {
+  overflow: hidden;
 }
 
 @keyframes scale-image {
