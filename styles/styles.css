@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   background: black;
+  color: white;
 }
 
 *,
@@ -20,10 +21,10 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: "Open Sans", helvetica-light, Arial, sans-serif;
+  user-select: none;
 }
 
 .header {
-  color: white;
   background: rgba(0, 0, 0, 0.1);
 }
 
@@ -67,6 +68,10 @@ body {
   width: 20px;
 }
 
+.navigation {
+  transition: 0.7s;
+}
+
 .menu {
   display: flex;
   gap: 10px;
@@ -84,6 +89,41 @@ body {
   height: 100dvh;
   object-fit: cover;
   animation: scale-image infinite 20s;
+}
+
+/*-------------------------------------burger---------------------------------------*/
+
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.burger__line {
+  width: 30px;
+  height: 3px;
+  border-radius: 3px;
+  background: white;
+  transition: 0.7s;
+}
+
+.burger_close .burger__line:nth-of-type(1) {
+  position: absolute;
+  rotate: 40deg;
+}
+
+.burger_close .burger__line:nth-of-type(3) {
+  position: absolute;
+  rotate: -40deg;
+}
+
+.burger_close .burger__line:nth-of-type(2) {
+  opacity: 0;
 }
 
 /*-------------------------------------maim-swiper----------------------------------*/
