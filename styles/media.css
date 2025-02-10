@@ -1,4 +1,4 @@
-@media(max-width: 768px) {
+@media(max-width: 930px) {
   .burger {
     display: flex;
   }
@@ -31,6 +31,7 @@
   .menu__item {
     text-align: center;
     width: 100%;
+    padding: 10px;
   }
 }
 

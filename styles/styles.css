@@ -84,6 +84,29 @@ body {
   font-size: 20px;
 }
 
+.menu__item {
+  border-radius: 2px;
+  transition: 0.7s;
+}
+
+.menu__item a {
+  border-radius: 2px;
+  padding: 10px;
+  transition: 0.7s;
+}
+
+.menu__item_active a {
+  background: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.menu__item a:hover {
+  background: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
 .preview-box {
   line-height: 0;
   overflow: hidden;
