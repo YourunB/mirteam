@@ -1,4 +1,8 @@
 @media(max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+  
   .navigation {
     display: flex;
     justify-content: center;
@@ -27,5 +31,11 @@
   .menu__item {
     text-align: center;
     width: 100%;
+  }
+}
+
+@media(max-width: 390px) {
+  .logo-box span {
+    display: none;
   }
 }
