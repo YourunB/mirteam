@@ -60,6 +60,14 @@ body {
 
 .logo {
   width: 60px;
+  border-radius: 100%;
+  transition: 1s;
+}
+
+@media(hover:hover) {
+  .logo-box:hover .logo {
+    transform: rotate(360deg);
+  }  
 }
 
 .chat-box {
@@ -101,10 +109,12 @@ body {
   color: black;
 }
 
-.menu__item a:hover {
-  background: white;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-  color: black;
+@media(hover:hover) {
+  .menu__item a:hover {
+    background: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    color: black;
+  }
 }
 
 .preview-box {
