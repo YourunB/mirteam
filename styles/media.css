@@ -1,5 +1,24 @@
 @media(max-width: 768px) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    height: calc(100dvh - 60px);
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
   .menu {
-    display: none;
+    display: block;
+  }
+
+  .menu__item {
+    text-align: center;
+    width: 100%;
   }
 }
