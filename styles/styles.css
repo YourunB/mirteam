@@ -25,8 +25,11 @@ body {
 }
 
 .header {
-  background: rgba(0, 0, 0, 0.1);
   transition: 0.7s;
+}
+
+.header_sticky {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .header_active {
@@ -216,6 +219,21 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.footer-section ul li {
+  padding: 0 0 5px 0;
+}
+
+.social-links a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.social-links a img {
+  height: 30px;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .scroll-off {
