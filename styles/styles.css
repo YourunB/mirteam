@@ -176,6 +176,37 @@ body {
   background-color: white;
 }
 
+/*------------------------------------------footer----------------------------------*/
+.footer {
+  background: rgba(50, 50, 50, 0.2);
+}
+
+.footer__conatiner {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+
+.footer-main {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .scroll-off {
   overflow: hidden;
 }
