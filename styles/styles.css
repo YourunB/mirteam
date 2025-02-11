@@ -178,7 +178,17 @@ body {
 
 /*------------------------------------------footer----------------------------------*/
 .footer {
-  background: rgba(50, 50, 50, 0.2);
+  position: relative;
+}
+
+.footer-animation {
+  position: absolute;
+  z-index: -1;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(121,121,121,0.2) 50%), rgba(0,0,0,0) 100%;
+  background: radial-gradient(circle, rgba(121,121,121,0.2) 0%, rgba(0,0,0,0) 50%);
+  animation: gradient-animation 15s infinite;
 }
 
 .footer__conatiner {
@@ -199,6 +209,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  font-size: 12px;
 }
 
 .footer-section ul {
@@ -220,5 +231,17 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
