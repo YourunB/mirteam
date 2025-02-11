@@ -236,6 +236,15 @@ body {
   border-radius: 5px;
 }
 
+.contacts-box {
+  display: flex;
+  gap: 5px;
+}
+
+.contacts-box img {
+  height: 30px;
+}
+
 .scroll-off {
   overflow: hidden;
 }
