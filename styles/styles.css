@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   background: black;
+  color: white;
 }
 
 *,
@@ -20,22 +21,31 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: "Open Sans", helvetica-light, Arial, sans-serif;
+  user-select: none;
 }
 
 .header {
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.7s;
+}
+
+.header_active {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.header__container {
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1440px;
   width: 100%;
-  height: 60px;
   margin: auto;
   padding: 10px;
-  color: white;
 }
 
 .header_absolute {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   z-index: 10;
@@ -50,6 +60,14 @@ body {
 
 .logo {
   width: 60px;
+  border-radius: 100%;
+  transition: 1s;
+}
+
+@media(hover:hover) {
+  .logo-box:hover .logo {
+    transform: rotate(360deg);
+  }  
 }
 
 .chat-box {
@@ -63,11 +81,40 @@ body {
   width: 20px;
 }
 
+.navigation {
+  transition: 0.7s;
+}
+
 .menu {
   display: flex;
   gap: 10px;
   list-style-type: none;
   font-size: 20px;
+}
+
+.menu__item {
+  border-radius: 2px;
+  transition: 0.7s;
+}
+
+.menu__item a {
+  border-radius: 2px;
+  padding: 10px;
+  transition: 0.7s;
+}
+
+.menu__item_active a {
+  background: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+@media(hover:hover) {
+  .menu__item a:hover {
+    background: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    color: black;
+  }
 }
 
 .preview-box {
@@ -82,6 +129,42 @@ body {
   animation: scale-image infinite 20s;
 }
 
+/*-------------------------------------burger---------------------------------------*/
+
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  display: none;
+  transition: 0.7s;
+}
+
+.burger__line {
+  width: 30px;
+  height: 3px;
+  border-radius: 3px;
+  background: white;
+  transition: 0.7s;
+}
+
+.burger_close .burger__line:nth-of-type(1) {
+  position: absolute;
+  rotate: 40deg;
+}
+
+.burger_close .burger__line:nth-of-type(3) {
+  position: absolute;
+  rotate: -40deg;
+}
+
+.burger_close .burger__line:nth-of-type(2) {
+  opacity: 0;
+}
+
 /*-------------------------------------maim-swiper----------------------------------*/
 
 .swiper-button-prev::after,
@@ -91,6 +174,10 @@ body {
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: white;
+}
+
+.scroll-off {
+  overflow: hidden;
 }
 
 @keyframes scale-image {
