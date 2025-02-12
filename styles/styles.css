@@ -249,6 +249,38 @@ body {
   overflow: hidden;
 }
 
+/*-------------------------------------scrollbar--------------------------------*/
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0);
+}
+*::-webkit-scrollbar-track:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+*::-webkit-scrollbar-track:active {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+*::-webkit-scrollbar-thumb:active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.scroll-off {
+  overflow-y: hidden;
+}
+
 @keyframes scale-image {
   0% {
     transform: scale(1);
