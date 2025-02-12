@@ -168,7 +168,7 @@ body {
   opacity: 0;
 }
 
-/*-------------------------------------maim-swiper----------------------------------*/
+/*-------------------------------------main-swiper----------------------------------*/
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -177,6 +177,19 @@ body {
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: white;
+}
+
+.swiper-slide__image {
+  width: 100%;
+}
+
+/*----------------------------------------multiple-swiper---------------------------*/
+
+.swiper-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
 }
 
 /*------------------------------------------footer----------------------------------*/
