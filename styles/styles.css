@@ -269,6 +269,22 @@ body {
   }
 }
 
+/*--------------------------------------"services-list------------------------------*/
+
+.services-list {
+  font-weight: 700;
+}
+
+.services-list,
+.services-list__sublist {
+  list-style-type: none;
+}
+
+.services-list__sublist {
+  font-weight: 400;
+  color: rgb(181, 181, 181);
+}
+
 /*-------------------------------------main-swiper----------------------------------*/
 
 .swiper-button-prev::after,
