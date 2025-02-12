@@ -182,6 +182,7 @@ body {
 /*------------------------------------------footer----------------------------------*/
 .footer {
   position: relative;
+  overflow-x: hidden;
 }
 
 .footer-animation {
