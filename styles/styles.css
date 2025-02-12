@@ -20,7 +20,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Open Sans", helvetica-light, Arial, sans-serif;
+  font-family: 'Open Sans', helvetica-light, Arial, sans-serif;
   user-select: none;
 }
 
@@ -67,10 +67,10 @@ body {
   transition: 1s;
 }
 
-@media(hover:hover) {
+@media (hover: hover) {
   .logo-box:hover .logo {
     transform: rotate(360deg);
-  }  
+  }
 }
 
 .chat-box {
@@ -113,7 +113,7 @@ body {
   color: black;
 }
 
-@media(hover:hover) {
+@media (hover: hover) {
   .menu__item a:hover {
     background: white;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -255,16 +255,16 @@ body {
   left: 0;
 }
 
-@media(hover:hover) {
+@media (hover: hover) {
   .advantages__text:hover {
     background: rgba(255, 255, 255, 0.9);
     color: black;
   }
-  
+
   .card:hover .card__side_front {
     transform: rotateY(-180deg);
   }
-  
+
   .card:hover .card__side_back {
     transform: rotateY(0deg);
   }
@@ -313,7 +313,7 @@ body {
   opacity: 0;
 }
 
-@media(hover:hover) {
+@media (hover: hover) {
   .swiper-slide:hover .swiper-slide__zoom {
     opacity: 1;
   }
@@ -349,7 +349,12 @@ section {
   padding: 10px;
   height: 600px;
   border-radius: 10px;
-  background: linear-gradient(90deg, rgba(255, 221, 2, 0.7) 0%, rgba(232, 197, 23, 0.7) 50%, rgba(255, 245, 136, 0.7) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 221, 2, 0.7) 0%,
+    rgba(232, 197, 23, 0.7) 50%,
+    rgba(255, 245, 136, 0.7) 100%
+  );
 }
 
 .promo h2,
@@ -418,8 +423,10 @@ section {
   z-index: -1;
   width: 200%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(121,121,121,0.2) 50%), rgba(0,0,0,0) 100%;
-  background: radial-gradient(circle, rgba(121,121,121,0.2) 0%, rgba(0,0,0,0) 50%);
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(121, 121, 121, 0.2) 50%),
+    rgba(0, 0, 0, 0) 100%;
+  background: radial-gradient(circle, rgba(121, 121, 121, 0.2) 0%, rgba(0, 0, 0, 0) 50%);
   animation: gradient-animation 15s infinite;
 }
 
@@ -434,7 +441,7 @@ section {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .footer-bottom {
