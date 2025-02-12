@@ -183,6 +183,24 @@ body {
   width: 100%;
 }
 
+.swiper-slide__zoom {
+  position: absolute;
+  padding: 5px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  right: 2px;
+  top: 2px;
+  width: 30px;
+  transition: 0.7s;
+  opacity: 0;
+}
+
+@media(hover:hover) {
+  .swiper-slide:hover .swiper-slide__zoom {
+    opacity: 1;
+  }
+}
+
 /*----------------------------------------multiple-swiper---------------------------*/
 
 .swiper-container {
