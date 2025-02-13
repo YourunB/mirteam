@@ -1,8 +1,8 @@
-@media(max-width: 930px) {
+@media (max-width: 930px) {
   .burger {
     display: flex;
   }
-  
+
   .navigation {
     display: flex;
     justify-content: center;
@@ -35,7 +35,32 @@
   }
 }
 
-@media(max-width: 390px) {
+@media (max-width: 768px) {
+  .advantages-wrapper {
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    color: black;
+  }
+
+  .advantages-wrapper:nth-of-type(2),
+  .advantages-wrapper:nth-of-type(4) {
+    flex-wrap: wrap-reverse;
+  }
+
+  .advantages__text {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: 300px;
+  }
+}
+
+@media (max-width: 390px) {
   .logo-box span {
     display: none;
   }
