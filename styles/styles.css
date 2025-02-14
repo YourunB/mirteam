@@ -26,15 +26,6 @@ body {
   animation: slow-whow 0.5s forwards;
 }
 
-@keyframes slow-whow {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .header {
   transition: 0.7s;
 }
@@ -549,5 +540,14 @@ section {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes slow-whow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
