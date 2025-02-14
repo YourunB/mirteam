@@ -22,6 +22,17 @@ body {
   overflow-x: hidden;
   font-family: 'Open Sans', helvetica-light, Arial, sans-serif;
   user-select: none;
+  opacity: 0;
+  animation: slow-whow 0.5s forwards;
+}
+
+@keyframes slow-whow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .header {
