@@ -500,7 +500,7 @@ section {
   display: block;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   .btn-top_show:hover {
     cursor: pointer;
     opacity: 1;
