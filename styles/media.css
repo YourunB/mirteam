@@ -39,7 +39,6 @@
   .advantages-wrapper {
     flex-wrap: wrap;
     padding: 10px;
-    border-radius: 5px;
     background: white;
     color: black;
   }
