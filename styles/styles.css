@@ -352,8 +352,15 @@ section {
   position: relative;
 }
 
+.gallery__link:nth-of-type(1),
+.gallery__link:nth-of-type(8) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
 .gallery__link__image {
   width: 100%;
+  object-fit: cover;
 }
 
 @media (hover: hover) {
