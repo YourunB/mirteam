@@ -28,6 +28,7 @@ body {
 
 .header {
   transition: 0.7s;
+  z-index: 100;
 }
 
 .header_sticky {
@@ -304,7 +305,8 @@ body {
   width: 100%;
 }
 
-.swiper-slide__zoom {
+.swiper-slide__zoom,
+.gallery__link__zoom {
   position: absolute;
   padding: 5px;
   border-radius: 100%;
@@ -336,6 +338,28 @@ section {
   width: 100%;
   margin: auto;
   overflow: hidden;
+}
+
+/*--------------------------------------gallery-------------------------------------*/
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.gallery__link {
+  position: relative;
+}
+
+.gallery__link__image {
+  width: 100%;
+}
+
+@media (hover: hover) {
+  .gallery__link:hover .gallery__link__zoom {
+    opacity: 1;
+  }
 }
 
 /*---------------------------------------promo--------------------------------------*/
