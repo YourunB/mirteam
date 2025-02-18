@@ -301,8 +301,15 @@ body {
   background-color: white;
 }
 
+.swiper-slide {
+  overflow: hidden;
+}
+
 .swiper-slide__image {
+  transform: scale(1.05);
   width: 100%;
+  object-fit: cover;
+  transition: 0.7s;
 }
 
 .swiper-slide__zoom,
@@ -322,6 +329,10 @@ body {
 @media (hover: hover) {
   .swiper-slide:hover .swiper-slide__zoom {
     opacity: 1;
+  }
+
+  .swiper-slide:hover .swiper-slide__image {
+    transform: scale(1.15);
   }
 }
 
