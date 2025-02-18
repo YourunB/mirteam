@@ -568,6 +568,20 @@ section {
   transform: scale(0.8);
 }
 
+/*----------------------------------------cursor------------------------------------*/
+
+.cursor {
+  position: fixed;
+  z-index: 10000;
+  width: 33px;
+  height: 33px;
+  box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
 /*----------------------------------------------------------------------------------*/
 
 .scroll-off {
