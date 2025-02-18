@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
   background: black;
   color: white;
+  cursor: url('../assets/images/icons/dot.png'), auto;
 }
 
 *,
@@ -14,6 +15,7 @@ html {
 a {
   text-decoration: inherit;
   color: inherit;
+  cursor: url('../assets/images/icons/dot-action.png'), pointer;
 }
 
 body {
