@@ -1,4 +1,6 @@
-const cursor = document.getElementById('cursor');
+const cursor = document.createElement('div');
+cursor.classList.add('cursor');
+document.body.prepend(cursor);
 
 document.addEventListener('mousemove', (e) => {
   if (navigator.maxTouchPoints > 0) {
