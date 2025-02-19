@@ -190,6 +190,10 @@ body {
 
 /*------------------------------------------main------------------------------------*/
 
+.main {
+  min-height: calc(100vh - 60px - 273px);
+}
+
 .section {
   padding: 10px;
 }
@@ -225,6 +229,12 @@ body {
 
 .social-list li img {
   width: 80px;
+}
+
+.map-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 /*---------------------------------advantages---------------------------------------*/
@@ -496,6 +506,7 @@ section {
 .footer {
   position: relative;
   overflow-x: hidden;
+  min-height: 273px;
 }
 
 .footer-animation {
