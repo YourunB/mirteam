@@ -10,7 +10,6 @@ btnBurger.addEventListener('click', () => {
 });
 
 window.addEventListener('scroll', () => {
-  console.log('aa');
-  if (document.body.getBoundingClientRect().y < 0) header.classList.add('header_sticky');
-  else header.classList.remove('header_sticky');
+  if (document.body.getBoundingClientRect().y < 0) header.classList.add('header_scroll');
+  else header.classList.remove('header_scroll');
 });

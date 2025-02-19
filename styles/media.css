@@ -39,7 +39,6 @@
   .advantages-wrapper {
     flex-wrap: wrap;
     padding: 10px;
-    border-radius: 5px;
     background: white;
     color: black;
   }
@@ -52,9 +51,24 @@
   .advantages__text {
     height: fit-content;
   }
-}
 
-@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery__link:nth-of-type(1),
+  .gallery__link:nth-of-type(8) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .gallery__link:nth-of-type(1),
+  .gallery__link:nth-of-type(4),
+  .gallery__link:nth-of-type(7),
+  .gallery__link:nth-of-type(10) {
+    grid-column: span 2;  
+  }
+
   .card {
     height: 300px;
   }
@@ -63,5 +77,16 @@
 @media (max-width: 390px) {
   .logo-box span {
     display: none;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__link:nth-of-type(1),
+  .gallery__link:nth-of-type(4),
+  .gallery__link:nth-of-type(7),
+  .gallery__link:nth-of-type(10) {
+    grid-column: span 1;  
   }
 }
