@@ -574,7 +574,7 @@ section {
 
 .cursor {
   position: fixed;
-  z-index: 10000;
+  z-index: 100000;
   width: 33px;
   height: 33px;
   box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.5);
@@ -584,6 +584,11 @@ section {
   pointer-events: none;
 }
 
+body .fancybox-can-zoomIn .fancybox-content,
+body .fancybox-can-pan .fancybox-content, .fancybox-can-swipe .fancybox-content,
+body .fancybox-button {
+  cursor: url('../assets/images/icons/dot-action.png'), pointer;
+}
 /*----------------------------------------------------------------------------------*/
 
 .scroll-off {
