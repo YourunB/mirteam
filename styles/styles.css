@@ -212,6 +212,21 @@ body {
   width: 100%;
 }
 
+/*------------------------------------contacts-page---------------------------------*/
+
+.social-list {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.social-list li img {
+  width: 80px;
+}
+
 /*---------------------------------advantages---------------------------------------*/
 
 .advantages {
