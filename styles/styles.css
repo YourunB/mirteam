@@ -201,6 +201,17 @@ body {
   padding: 5px;
 }
 
+.text-bold {
+  font-weight: 700;
+}
+
+.about-logo {
+  display: block;
+  margin: auto;
+  max-width: 400px;
+  width: 100%;
+}
+
 /*---------------------------------advantages---------------------------------------*/
 
 .advantages {
