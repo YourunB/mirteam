@@ -622,7 +622,8 @@ section {
 }
 
 body .fancybox-can-zoomIn .fancybox-content,
-body .fancybox-can-pan .fancybox-content, .fancybox-can-swipe .fancybox-content,
+body .fancybox-can-pan .fancybox-content,
+.fancybox-can-swipe .fancybox-content,
 body .fancybox-button {
   cursor: url('../assets/images/icons/dot-action.png'), pointer;
 }
