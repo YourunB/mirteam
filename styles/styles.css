@@ -627,6 +627,11 @@ body .fancybox-can-pan .fancybox-content,
 body .fancybox-button {
   cursor: url('../assets/images/icons/dot-action.png'), pointer;
 }
+
+.unvisible {
+  display: none;
+}
+
 /*----------------------------------------------------------------------------------*/
 
 .scroll-off {
