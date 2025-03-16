@@ -191,7 +191,7 @@ body {
 /*------------------------------------------main------------------------------------*/
 
 .main {
-  min-height: calc(100vh - 60px - 273px);
+  min-height: calc(100vh - 60px - 213px);
 }
 
 .section {
@@ -214,6 +214,14 @@ body {
   margin: auto;
   max-width: 400px;
   width: 100%;
+}
+
+/*------------------------------------not-found-------------------------------------*/
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*------------------------------------contacts-page---------------------------------*/
